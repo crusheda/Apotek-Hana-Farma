@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <title>Daftar Akun - Apotek</title>
+  <link href='img/jarum.ico' rel='shortcut icon'>
+  <link rel="icon" href="img/jarum.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/login.js">
+  <link rel="stylesheet" href="style.less">
+
+  <link href="datepicker/jquery-ui-1.11.4/smoothness/jquery-ui.css" rel="stylesheet" />
+  <script src="datepicker/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+  <script src="datepicker/jquery-ui-1.11.4/jquery-ui.js"></script>
+  <script src="datepicker/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="datepicker/jquery-ui-1.11.4/jquery-ui.theme.css">
+  <script>
+   $(document).ready(function(){
+	   $("#tanggal").datepicker({
+	   })
+   })
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Apotik Hana Farma</h1>
+      <a>Jam Buka 00:00 - 00:00 WIB</a>
+      <form action="info.html">
+          <a>Lihat Lokasi
+            <a style="color: white" href="info.html">Disini</a>
+          </a>
+      </form>
+      <form class="form" action="daftar.php" method="post">
+        <input type="text" name="nama" 		maxlength="20" placeholder="Nama Lengkap">
+        <input type="number" name="umur" 	maxlength="2" min="5" max="30" placeholder="Umur">
+        <input type="text" name="alamat" 	maxlength="20" placeholder="Alamat">
+        <input type="text" name="hari" 		id="tanggal" placeholder="Tanggal">
+        <input type="number" name="jam" 	maxlength="2" min="6" max="22" placeholder="jam">
+        <br>
+        <button type="submit" id="login-button">Daftar</button>
+      </form>
+      <form action="../login/login.html">
+          <a style="font-size: 18px;color: white" href="../login/login.html"><b>Masuk Sekarang</b></a>
+      </form>
+
+    </div>
+    
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>
